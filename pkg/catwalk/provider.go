@@ -32,6 +32,8 @@ const (
 	InferenceProviderCerebras   InferenceProvider = "cerebras"
 	InferenceProviderVenice     InferenceProvider = "venice"
 	InferenceProviderChutes     InferenceProvider = "chutes"
+	InferenceProviderDeepSeek   InferenceProvider = "deepseek"
+	InferenceProviderOllamaTurbo InferenceProvider = "ollama-turbo"
 )
 
 // Provider represents an AI provider configuration.
@@ -80,5 +82,7 @@ func KnownProviders() []InferenceProvider {
 		InferenceProviderCerebras,
 		InferenceProviderVenice,
 		InferenceProviderChutes,
+		InferenceProviderDeepSeek,
+		InferenceProviderOllamaTurbo,
 	}
 }
